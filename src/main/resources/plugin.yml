@@ -1,0 +1,11 @@
+name: JoinMessages
+version: '${project.version}'
+main: org.me.pyke.joinmessages.JoinMessages
+api-version: '1.20'
+author: 666pyke
+depend: [LuckPerms]
+commands:
+  joinmessages:
+    description: Reincarca pluginul.
+    usage: /joinmessages <reload>
+    permission: joinmessages.reload
