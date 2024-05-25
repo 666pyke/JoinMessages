@@ -6,6 +6,14 @@
 
 Configuration:
 ```
+# ****************************
+#
+# You can change the 'permission' parameter to whatever you want and provide the respective
+# permission to the rank to which you want to associate the respective messages. If you want only
+# special ranks, such as donors and staff members, to have special messages, don't give players
+# permission from the 'DEFAULT' category. I hope you won't encounter any issues using my plugin.
+#
+# ****************************
 donator:
   join-message: "%user% joined the server"
   leave-message: "%user% left the server"
@@ -20,6 +28,14 @@ default:
   join-message: "%user% joined the server"
   leave-message: "%user% left the server"
   permission: joinmessages.default
+
+options:
+  disable-vanilla-message: true # the default yellow messages such as "mareleepyke joined the game"
+
+# priority for checking permissions will be staff > donator > default
+
+messages:
+  reloaded: "Plugin reloaded."
 ```
 
 ● This **plugin** can also completely **disable** the messages that appear when someone joins or leaves the server, which can be annoying or visually unappealing. 
